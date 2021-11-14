@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/imgs/icons/icon-title-2.png">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/phone-icon-fixed.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <title>TTVFood</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Start Header  -->
+        <div class="header-wrapper">
+            <div class="container flex-container">
+                <i class="menu-mb-bar fas fa-bars"></i>
+                <div id="logo"><img src="assets/imgs/icons/main-logo.png" alt="TTVFood logo"></div>
+                <div id="navbar" class="navbar">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Trang chủ</a>
+                        </li>
+                        <li class="nav-item" style="position: relative;">
+                            <div onclick="dropDownSubnav()" class="nav-link" id="btn-dropdown">Thể loại <i
+                                    class="fas fa-angle-down"></i></div>
+                            <ul class="subnav" id="myDropdown">
+                                <li>
+                                    <a href="#product">Eat clean</a>
+                                </li>
+                                <li>
+                                    <a href="#product">Eat heathy</a>
+                                </li>
+                                <li>
+                                    <a href="#product">Đồ ăn nhanh</a>
+                                </li>
+                                <li>
+                                    <a href="#product">Đồ ăn Cao cấp</a>
+                                </li>
+                                <li>
+                                    <a href="#product">Đồ ăn Bình dân</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#member" class="nav-link">Người sáng lập</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Liên hệ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#map" class="nav-link">Bản đồ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="search-box">
+                    <form action="">
+                        <input type="search" placeholder="Search something">
+                        <span class="pre-input">
+                            <a class="fas fa-search"></a>
+                        </span>
+                    </form>
+                </div>
+                <div id="user-account">
+                    <!-- Form sign in  -->
+                    <button id="btnSignIn">Đăng nhập</button>
+                    <div id="signInModal" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-title">
+                                <h3>Đăng nhập</h3>
+                                <button class="close">Thoát</button>
+                            </div>
+                            <input type="text" placeholder="Tài khoản">
+                            <input type="password" placeholder="Mật khẩu">
+
+                            <a class="btn-submit" href="">Đăng nhập</a>
+                            <a href="">Quên mật khẩu?</a>
+                            <a href="">Đăng ký</a>
+                        </div>
+                    </div>
+                    <!-- Form sign up -->
+                    <button id="btnSignUp">Đăng ký</button>
+                    <div id="signUpModal" class="modal2">
+                        <div class="modal-content">
+                            <div class="modal-title">
+                                <h3>Đăng ký</h3>
+                                <button class="close2">Thoát</button>
+                            </div>
+                            <h4>Họ tên <span>*</span></h4>
+                            <input type="text">
+                            <h4>Ngày sinh <span>*</span></h4>
+                            <input type="datetime">
+                            <h4>Số điện thoại <span>*</span></h4>
+                            <input type="text">
+                            <h4>Địa chỉ <span>*</span></h4>
+                            <input type="text">
+                            <a class="btn-submit" href="">Đăng Ký</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- End Header  -->
+
+        <!-- Start slider -->
+        <!-- <div class=" "> -->
+        <div class="owl-carousel owl-theme slider flex-container">
+            <div class="item" style="background-image: url(assets/imgs/slide/eat-clean.png);">
+                <div class="overlay">
+                    <div class="text-content wow bounceInRight" data-wow-duration="s.5" data-wow-delay="0s">
+                        <h2 class="text-heading">Eat heathy</h2>
+                        <p class="text-description">The atmosphere in New York is lorem ipsum.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(assets/imgs/slide/eat-clean2.png);">
+                <div class="overlay">
+                    <div class="text-content wow bounceInRight" data-wow-duration="1.5s" data-wow-delay="2s">
+                        <h2 class="text-heading">Eat heathy</h2>
+                        <p class="text-description">The atmosphere in New York is lorem ipsum.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(assets/imgs/slide/eat-clean3.png);">
+                <div class="overlay">
+                    <div class="text-content wow bounceInRight" data-wow-duration="1.5s" data-wow-delay="4s">
+                        <h2 class="text-heading">Eat heathy</h2>
+                        <p class="text-description">The atmosphere in New York is lorem ipsum.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(assets/imgs/slide/eat-clean4.png);">
+                <div class="overlay">
+                    <div class="text-content wow bounceInRight" data-wow-duration="1.5s" data-wow-delay="6s">
+                        <h2 class="text-heading">Eat heathy</h2>
+                        <p class="text-description">The atmosphere in New York is lorem ipsum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+        <!-- End slider -->
+
+        <!-- Start Categories -->
+        <div class="categories-food section ">
+            <div class="container">
+                <div class="cate-items flex-container">
+                    <div class="item">
+                        <img src="assets/imgs/icons/noodle-icon.png" alt="">
+                        <img src="assets/imgs/icons/pizza-icon.png" alt="">
+                        <img src="assets/imgs/icons/hamberger-icon.png" alt="">
+                        <img src="assets/imgs/icons/com-icon.png" alt="">
+                        <h2>Chúng tôi cung cấp tất cả các thể loại đồ ăn</h2>
+                        <p>Cảm nhận của khách hàng luôn được đặt lên hàng đầu</p>
+                    </div>
+                    <div class="item">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/A4A15EdCNLQ"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen style="border-radius: 2rem;"></iframe>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- End Categories -->
+
+        <!-- Line through -->
+        <div class="line-through"></div>
+
+        <!-- Start products vinh-->
+        <div class="container" id="product">
+            <div class="food-menu ">
+                <h1>Hôm nay ăn gì?</h1>
+                <p>Eat clean sử dụng các loại thực phẩm càng gần với trạng thái tự nhiên giúp cung cấp lợi ích dinh dưỡng tối đa. 
+                    Lựa chọn thực phẩm có phẩm chất tốt và bền vững cũng là một phần của “eat clean”.</p>
+                <div class="food-category animate__animated animate__fadeInDown">
+                    <div>
+                        <button data-food-type="all" class="active">
+                            All food
+                        </button>
+                    </div>
+                    <div>
+                        <button data-food-type="salad">
+                            Eat clean
+                        </button>
+                    </div>
+                    <div>
+                        <button data-food-type="lorem">
+                            Eat healthy
+                        </button>
+                    </div>
+                    <div>
+                        <button data-food-type="ipsum">
+                            Gym Food
+                        </button>
+                    </div>
+                    <div>
+                        <button data-food-type="dolor">
+                            Street food
+                        </button>
+                    </div>
+
+                </div>
+                <div class="food-item-wrap all ">
+                    <!-- Start Eat clean section  -->
+                    <div class="food-item m-4 c-6 c-12 col-xs-6 eat-clean-type wow bounceInDown"
+                        data-wow-duration="1.3s" data-wow-delay="1s">
+                        <div class="item-wrap">
+                            <div class="item-img">
+                                <div class="img-hoder bg-img"
+                                    style="background-image: url(./assets/imgs/foods/17.jpg);">
+                                </div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>Salad bơ giá</h3>
+                                    <span style="text-decoration: line-through; color: gray;">35.000đ</span>
+                                    <span>25.000đ</span>
+                                </div>
+                                <div class="cart-btn"><i class="fas fa-shopping-cart"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item m-4 c-6 c-12 col-xs-6 eat-clean-type wow bounceInDown"
+                        data-wow-duration="1.5s" data-wow-delay="1s">
+                        <div class="item-wrap">
+                            <div class="item-img">
+                                <div class="img-hoder bg-img" style="background-image: url(./assets/imgs/foods/8.jpg);">
+                                </div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>Salad cà chua</h3>
+                                    <span style="text-decoration: line-through; color: gray;">35.000đ</span>
+                                    <span>25.000đ</span>
+                                </div>
+                                <div class="cart-btn"><i class="fas fa-shopping-cart"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item m-4 c-6 c-12 col-xs-6 eat-clean-type  wow bounceInDown"
+                        data-wow-duration="1.7s" data-wow-delay="1s">
+                        <div class="item-wrap">
+                            <div class="item-img">
+                                <div class="img-hoder bg-img"
+                                    style="background-image: url(./assets/imgs/foods/15.jpg);">
+                                </div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>Salad thập cẩm</h3>
+                                    <span style="text-decoration: line-through; color: gray;">35.000đ</span>
+                                    <span>25.000đ</span>
+                                </div>
+                                <div class="cart-btn"><i class="fas fa-shopping-cart"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item m-4 c-6 c-12 col-xs-6 eat-clean-type  wow bounceInDown"
+                        data-wow-duration="1.9s" data-wow-delay="1s">
+                        <div class="item-wrap">
+                            <div class="item-img">
+                                <div class="img-hoder bg-img"
+                                    style="background-image: url(./assets/imgs/foods/10.jpg);">
+                                </div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>Salad hoa quả</h3>
+                                    <span style="text-decoration: line-through; color: gray;">35.000đ</span>
+                                    <span>25.000đ</span>
+                                </div>
+                                <div class="cart-btn"><i class="fas fa-shopping-cart"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Eat clean section  -->
+
+                    <!-- Start Eat healthy section  -->
+                    <div class="food-item m-4 c-6 c-12 col-xs-6 eat-healthy-type  wow bounceInDown"
+                        data-wow-duration="1.3s" data-wow-delay="1s">
+                        <div class="item-wrap">
+                            <div class="item-img">
+                                <div class="img-hoder bg-img"
+                                    style="background-image: url(./assets/imgs/foods/14.jpg);">
+                                </div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>Cơm gạo lứt tôm rim</h3>
+                                    <span style="text-decoration: line-through; color: gray;">35.000đ</span>
+                                    <span>25.000đ</span>
+                                </div>
+                                <div class="cart-btn"><i class="fas fa-shopping-cart"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item m-4 c-6 c-12 col-xs-6 eat-healthy-type  wow bounceInDown"
+                        data-wow-duration="1.5s" data-wow-delay="1s">
+                        <div class="item-wrap">
+                            <div class="item-img">
+                                <div class="img-hoder bg-img"
+                                    style="background-image: url(./assets/imgs/foods/16.jpg);">
+                                </div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>Bún trộn</h3>
+                                    <span style="text-decoration: line-through; color: gray;">35.000đ</span>
+                                    <span>25.000đ</span>
+                                </div>
+                                <div class="cart-btn"><i class="fas fa-shopping-cart"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item m-4 c-6 c-12 col-xs-6 eat-healthy-type  wow bounceInDown"
+                        data-wow-duration="1.7s" data-wow-delay="1s">
+                        <div class="item-wrap">
+                            <div class="item-img">
+                                <div class="img-hoder bg-img" style="background-image: url(./assets/imgs/foods/3.jpg);">
+                                </div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>Bún gạo lứt thập cẩm</h3>
+                                    <span style="text-decoration: line-through; color: gray;">35.000đ</span>
+                                    <span>25.000đ</span>
+                                </div>
+                                <div class="cart-btn"><i class="fas fa-shopping-cart"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item m-4 c-6 c-12 col-xs-6 eat-healthy-type  wow bounceInDown"
+                        data-wow-duration="1.9s" data-wow-delay="1s">
+                        <div class="item-wrap">
+                            <div class="item-img">
+                                <div class="img-hoder bg-img" style="background-image: url(./assets/imgs/foods/5.jpg);">
+                                </div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>Bún gạo lứt chay </h3>
+                                    <span style="text-decoration: line-through; color: gray;">35.000đ</span>
+                                    <span>25.000đ</span>
+                                </div>
+                                <div class="cart-btn"><i class="fas fa-shopping-cart"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Eat healthy section  -->
+
+                    <!-- Start Food for Gym  -->
+                    <div class="food-item m-4 c-6 c-12 col-xs-6 food-for-gym-type  wow bounceInDown"
+                        data-wow-duration="1.3s" data-wow-delay="1s">
+                        <div class="item-wrap">
+                            <div class="item-img">
+                                <div class="img-hoder bg-img" style="background-image: url(./assets/imgs/foods/1.jpg);">
+                                </div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>Cơm gạo lứt ức gà</h3>
+                                    <span style="text-decoration: line-through; color: gray;">35.000đ</span>
+                                    <span>25.000đ</span>
+                                </div>
+                                <div class="cart-btn"><i class="fas fa-shopping-cart"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item m-4 c-6 c-12 col-xs-6 food-for-gym-type  wow bounceInDown"
+                        data-wow-duration="1.5s" data-wow-delay="1s">
+                        <div class="item-wrap">
+                            <div class="item-img">
+                                <div class="img-hoder bg-img"
+                                    style="background-image: url(./assets/imgs/foods/13.jpg);">
+                                </div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>Cơm gạo lứt cá hồi</h3>
+                                    <span style="text-decoration: line-through; color: gray;">35.000đ</span>
+                                    <span>25.000đ</span>
+                                </div>
+                                <div class="cart-btn"><i class="fas fa-shopping-cart"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item m-4 c-6 c-12 col-xs-6 food-for-gym-type  wow bounceInDown"
+                        data-wow-duration="1.7s" data-wow-delay="1s">
+                        <div class="item-wrap">
+                            <div class="item-img">
+                                <div class="img-hoder bg-img" style="background-image: url(./assets/imgs/foods/4.jpg);">
+                                </div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>Bún gạo lứt ức gà</h3>
+                                    <span style="text-decoration: line-through; color: gray;">35.000đ</span>
+                                    <span>25.000đ</span>
+                                </div>
+                                <div class="cart-btn"><i class="fas fa-shopping-cart"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item m-4 c-6 c-12 col-xs-6 food-for-gym-type  wow bounceInDown"
+                        data-wow-duration="1.9s" data-wow-delay="1s">
+                        <div class="item-wrap">
+                            <div class="item-img">
+                                <div class="img-hoder bg-img" style="background-image: url(./assets/imgs/foods/6.jpg);">
+                                </div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>Cơm gạo lứt thập cẩm</h3>
+                                    <span style="text-decoration: line-through; color: gray;">35.000đ</span>
+                                    <span>25.000đ</span>
+                                </div>
+                                <div class="cart-btn"><i class="fas fa-shopping-cart"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Food for Gym  -->
+
+                    <!-- Start Street food -->
+                    <div class="food-item m-4 c-6 c-12 col-xs-6 street-food-type  wow bounceInDown"
+                        data-wow-duration="1.3s" data-wow-delay="1s">
+                        <div class="item-wrap">
+                            <div class="item-img">
+                                <div class="img-hoder bg-img"
+                                    style="background-image: url(./assets/imgs/foods/bd.jpg);">
+                                </div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>Bún đậu Hàng Khay</h3>
+                                    <span style="text-decoration: line-through; color: gray;">55.000đ</span>
+                                    <span>45.000đ</span>
+                                </div>
+                                <div class="cart-btn"><i class="fas fa-shopping-cart"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item m-4 c-6 c-12 col-xs-6 street-food-type  wow bounceInDown"
+                        data-wow-duration="1.5s" data-wow-delay="1s">
+                        <div class="item-wrap">
+                            <div class="item-img">
+                                <div class="img-hoder bg-img"
+                                    style="background-image: url(./assets/imgs/foods/bt.jpg);">
+                                </div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>Bánh tráng trộn Công Nghiệp</h3>
+                                    <span style="text-decoration: line-through; color: gray;">35.000đ</span>
+                                    <span>25.000đ</span>
+                                </div>
+                                <div class="cart-btn"><i class="fas fa-shopping-cart"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item m-4 c-6 c-12 col-xs-6 street-food-type  wow bounceInDown"
+                        data-wow-duration="1.7s" data-wow-delay="1s">
+                        <div class="item-wrap">
+                            <div class="item-img">
+                                <div class="img-hoder bg-img"
+                                    style="background-image: url(./assets/imgs/foods/btn.jpg);">
+                                </div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>Bánh tráng nướng Xuân Thủy</h3>
+                                    <span style="text-decoration: line-through; color: gray;">35.000đ</span>
+                                    <span>25.000đ</span>
+                                </div>
+                                <div class="cart-btn"><i class="fas fa-shopping-cart"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item m-4 c-6 c-12 col-xs-6 street-food-type  wow bounceInDown"
+                        data-wow-duration="1.9s" data-wow-delay="1s">
+                        <div class="item-wrap">
+                            <div class="item-img">
+                                <div class="img-hoder bg-img"
+                                    style="background-image: url(./assets/imgs/foods/bmdt.jpg);">
+                                </div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>Bánh mỳ Dân Tổ</h3>
+                                    <span style="text-decoration: line-through; color: gray;">35.000đ</span>
+                                    <span>25.000đ</span>
+                                </div>
+                                <div class="cart-btn"><i class="fas fa-shopping-cart"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Start Street food -->
+                </div>
+                <!-- <div class="food-item-wrap all"></div> -->
+            </div>
+        </div>
+        <!-- End products vinh-->
+
+        <!-- Start open time -->
+        <div class="open-time section ">
+            <div class="container open-time-wrap">
+                <h2 class="title-section">Thời gian mở cửa!</h2>
+                <div class=" overflow-x">
+                    <div class="item-time wow slideInDown" data-wow-duration="1.2s" data-wow-delay="1s">
+                        <ul>
+                            <h4>Mon</h4>
+                            <li>7h - 12h </li>
+                            <li>18h - 22h </li>
+                        </ul>
+                    </div>
+                    <div class="item-time wow slideInDown" data-wow-duration="1.4s" data-wow-delay="1s">
+                        <ul>
+                            <h4>Tue</h4>
+                            <li>6h - 12h </li>
+                            <!-- <li> </li> -->
+                        </ul>
+                    </div>
+                    <div class="item-time wow slideInDown" data-wow-duration="1.6s" data-wow-delay="1s">
+                        <ul>
+                            <h4>Wed</h4>
+                            <li>6h - 11h </li>
+                            <li>14h - 12h </li>
+                        </ul>
+                    </div>
+                    <div class="item-time wow slideInDown" data-wow-duration="1.8s" data-wow-delay="1s">
+                        <ul>
+                            <h4>Thur</h4>
+                            <li>6h - 11h </li>
+                            <li>14h - 22h </li>
+                        </ul>
+                    </div>
+                    <div class="item-time wow slideInDown" data-wow-duration="2s" data-wow-delay="1s">
+                        <ul>
+                            <h4>Fri</h4>
+                            <li>6h - 11h </li>
+                            <li>14h - 22h</li>
+                        </ul>
+                    </div>
+                    <div class="item-time wow slideInDown" data-wow-duration="2.2s" data-wow-delay="1s">
+                        <ul>
+                            <h4>Sat & Sun</h4>
+                            <li>6h - 12h </li>
+                            <!-- <li>6h - 2h </li> -->
+                        </ul>
+                    </div>
+                </div>
+                <p class="decr-section">Chúng tôi luôn sẵn sàng phục vụ quý khách tất cả các ngày trong tuần!</p>
+            </div>
+
+        </div>
+        <!-- End open time -->
+
+        <!-- Start chef -->
+        <div class="chef section animate__fadeInDown" id="member">
+            <div class="container flex-container">
+                <h2 class="title-section" style="flex: 100%;">Người sáng lập TTVFood</h2>
+                <div class="item-chef wow bounceInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                    <img src="assets/imgs/team/item-team.png" alt="">
+                    <div class="overlay-team">
+                        <div>
+                            <h4><i>Vinh Văn Vở</i></h4>
+                            <ul>
+                                <li><img src="assets/imgs/icons/chef-icon.png" width="30px" alt=""> Tuổi: 19</li>
+                                <li><img src="assets/imgs/icons/chef-icon.png" width="30px" alt=""> Kinh nghiệm: 10 năm bán
+                                    hải sản Nam Định</li>
+                                <li><img src="assets/imgs/icons/chef-icon.png" width="30px" alt=""> Ngoại hình: Đẹp trai, bụng
+                                    9 múi</li>
+                                <li><img src="assets/imgs/icons/chef-icon.png" width="30px" alt=""> Tình trạng: Có 10 nys</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-chef wow bounceInLeft" data-wow-duration="1.5s" data-wow-delay="1s">
+                    <img src="assets/imgs/team/item-team2.jpg" alt="">
+                    <div class="overlay-team">
+                        <div>
+                            <h4><i>Tuấn Tử Tế</i></h4>
+                            <ul>
+                                <li><img src="assets/imgs/icons/chef-icon.png" width="30px" alt=""> Tuổi: 20</li>
+                                <li><img src="assets/imgs/icons/chef-icon.png" width="30px" alt=""> Kinh nghiệm: 10 năm bán
+                                    bún đậu Bờ Hồ</li>
+                                <li><img src="assets/imgs/icons/chef-icon.png" width="30px" alt=""> Ngoại hình: Đẹp trai như
+                                    trai Hàn</li>
+                                <li><img src="assets/imgs/icons/chef-icon.png" width="30px" alt=""> Tình trạng: Ế.exe</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-chef wow bounceInLeft" data-wow-duration="2s" data-wow-delay="1s">
+                    <img src="assets/imgs/team/item-team3.png" alt="">
+                    <div class="overlay-team">
+                        <div>
+                            <h4><i>Trung Trẻ Trâu</i></h4>
+                            <ul>
+                                <li><img src="assets/imgs/icons/chef-icon.png" width="30px" alt=""> Tuổi: 19</li>
+                                <li><img src="assets/imgs/icons/chef-icon.png" width="30px" alt=""> Kinh nghiệm: 10 năm bán
+                                    lươn xứ Nghệ</li>
+                                <li><img src="assets/imgs/icons/chef-icon.png" width="30px" alt=""> Ngoại hình: Đẹp trai, hơi
+                                    lươn</li>
+                                <li><img src="assets/imgs/icons/chef-icon.png" width="30px" alt=""> Tình trạng: Có 999 nys
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End chef -->
+
+        <!-- Start review -->
+        <div class="review section" id="contact">
+            <div class="container flex-container">
+                <h2 class="title-section" style="flex: 100%;">Phản hồi</h2>
+                <div class="review-item">
+                    <h4>Cảm ơn bạn đã đóng góp ý kiến!</h4>
+                    <p class="decr-section">Những đóng góp của bạn rất hữu ích cho sự phát triển của TTVFood</p>
+                    <form action="">
+                        <input type="text" name="" id="" placeholder="Tên">
+                        <input type="text" name="" id="" placeholder="Địa chỉ email">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Nhập ý kiến..."></textarea>
+                        <button type="button">Gửi</button>
+                    </form>
+                </div>
+                <div class="review-item">
+                    <h4>Đội ngũ nhân viên đầy tâm huyết luôn sẵn sàng phục phụ!</h4>
+                    <img src="assets/imgs/team/nhanvien.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- End review -->
+
+        <!-- Start map -->
+        <div class="TTV-map" id="map">
+            <div class="container">
+                <h2 class="title-section">Tới TTVFood ngay thôi!</h2>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.8168144215447!2d105.73976961540247!3d21.040014492768737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135096b31fa7abb%3A0xff645782804911af!2zVHLGsOG7nW5nIMSR4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgxJDDtG5nIMOB!5e0!3m2!1svi!2s!4v1634125629957!5m2!1svi!2s"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+        <!-- End map -->
+
+        <!-- Start btn Back to top  -->
+        <div class="back-top">
+            <button id="btn-back-to-top"><i class="fas fa-angle-up"></i></button>
+        </div>
+        <!-- End btn Back to top  -->
+
+        <!-- Start Phone icon fixed -->
+        <div class="hotline-phone-ring-wrap">
+            <div class="hotline-phone-ring">
+                <div class="hotline-phone-ring-circle"></div>
+                <div class="hotline-phone-ring-circle-fill"></div>
+                <div class="hotline-phone-ring-img-circle">
+                    <a href="tel:83836262" class="pps-btn-img">
+                        <img src="assets/imgs/icons/phone-icon-fix.png" alt="Gọi điện thoại" width="50">
+                    </a>
+                </div>
+            </div>
+            <div class="hotline-bar">
+                <a href="tel:83836262">
+                    <span class="text-hotline">8383 6262</span>
+                </a>
+            </div>
+        </div>
+        <!-- End Phone icon fixed -->
+    </div>
+
+    <!-- section footer start-->
+    <section id="footer">
+        <div class="footer">
+            <div class="footer-item">
+                <h3>Chi nhánh</h3>
+                <i class="fas fa-map-marker-alt"><a>thai binh</a></i>
+                <i class="fas fa-map-marker-alt"><a>nam dinh</a></i>
+                <i class="fas fa-map-marker-alt"><a>nghe an</a></i>
+                <i class="fas fa-map-marker-alt"><a>ha noi</a></i>
+                <i class="fas fa-map-marker-alt"><a>tp HCM</a></i>
+            </div>
+            <div class="footer-item">
+                <h3>Nhà tài trợ</h3>
+                <i class="fas fa-arrow-right"><a target="_blank" href="https://www.facebook.com/dhcnDongA">Trường ĐH Công Nghệ Đông Á</a ></i>
+                <i class="fas fa-arrow-right"><a target="_blank" href="https://www.facebook.com/polycogroup/">Tập đoàn Polyco</a ></i>
+                <i class="fas fa-arrow-right"><a target="_blank" href="https://www.facebook.com/thepilot.vn">The Pilot - EAUT</a ></i>
+            </div>
+            <div class="footer-item">
+                <h3>Liên hệ</h3>
+                <i class="fas fa-phone"><a>Hotline: 8383 6262</a></i>
+                <i class="fas fa-phone"><a>111-222-333</a></i>
+                <i class="fas fa-envelope"><a>TTVFood@gmail.com</a></i>
+                <i class="fas fa-map-marker-alt"><a>ha noi - viet nam</a></i>
+
+            </div>
+            <div class="footer-item">
+                <h3>Mạng xã hội</h3>
+                <i class="fab fa-facebook-f"><a>TTVFood</a></i>
+                <i class="fab fa-twitter"><a>TTVFood</a></i>
+                <i class="fab fa-instagram-square"><a>instargram</a></i>
+                <i class="fab fa-linkedin"><a>linkedin</a></i>
+                <i class="fab fa-pinterest"><a>pinterest</a></i>
+            </div>
+        </div>
+        <div class="copyright">create by TTVFood's Designers | all right reserved</div>
+    </section>
+    <!-- section footer end-->
+
+
+
+
+    <!-- Js  -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/carousel.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="assets/js/myJs.js"></script>
+</body>
+
+</html>
